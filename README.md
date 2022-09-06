@@ -1,2 +1,4 @@
 # FEETECH-Servo-Python-SDK
-FEETECH Servo Python SDK. Copy official repository.
+
+This is source code from [official feetech repository](https://gitee.com/ftservo/SCServoSDK).
+Used for creating pip package.
