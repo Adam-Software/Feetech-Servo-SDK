@@ -1,16 +1,21 @@
 from setuptools import setup
 
+with open("README.md", "r", encoding = "utf-8") as fh:
+    long_description = fh.read()
+
 setup(
-    name='FEETECH-Servo-Python-SDK',
-    version='0.0.1',
+    name='feetech-servo-sdk',
+    version='0.1.0',
     packages=['scservo_sdk'],
-    url='https://gitee.com/ftservo/SCServoSDK',
+    url='https://github.com/Adam-Software/FEETECH-Servo-Python-SDK',
     license='UNLICENSE',
     author='vertigra',
     author_email='a@nesterof.com',
     description='This is source code from official feetech repository',
+    long_description_content_type="text/markdown",
+    long_description=long_description,
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'License :: OSI Approved :: The Unlicense (Unlicense)',
         'Operating System :: POSIX :: Other',
         'Programming Language :: Python :: 3',
