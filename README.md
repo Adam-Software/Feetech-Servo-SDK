@@ -27,7 +27,7 @@ The `scsservo_sdk_source` directory contains the original archive with the sourc
 Tested on `Linux raspberrypi 5.15.61-v8+ #1579 SMP PREEMPT Fri Aug 26 11:16:44 BST 2022 aarch64`.
 Python version `Python 3.9.2`.
 
-### 1. Clone repositry
+### Method 1. Clone repositry
 
 ```
 $ cd /usr/src/
@@ -40,3 +40,15 @@ Succeeded to change the baudrate
 [ID:001] ping Succeeded. SCServo model number : 1540
 ```
 
+### Method 2. Install pip package
+
+Copy the sample file to any location convenient for you. In the example I use `/home/pi/FeetechTestFiles`
+
+```
+$ pip install feetech-servo-sdk
+$ cd /home/pi/FeetechTestFiles
+$ python3 ping.py
+Succeeded to open the port
+Succeeded to change the baudrate
+[ID:001] ping Succeeded. SCServo model number : 1540
+```
