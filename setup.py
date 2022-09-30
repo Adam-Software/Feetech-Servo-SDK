@@ -5,7 +5,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setup(
     name='feetech-servo-sdk',
-    version='0.1.0',
+    version='0.2.0',
     packages=['scservo_sdk'],
     url='https://github.com/Adam-Software/FEETECH-Servo-Python-SDK',
     license='UNLICENSE',

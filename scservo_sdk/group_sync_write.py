@@ -3,7 +3,8 @@
 from .scservo_def import *
 
 class GroupSyncWrite:
-    def __init__(self, ph, start_address, data_length):
+    def __init__(self, port, ph, start_address, data_length):
+        self.port = port
         self.ph = ph
         self.start_address = start_address
         self.data_length = data_length
@@ -69,5 +70,5 @@ class GroupSyncWrite:
         if self.is_param_changed is True or not self.param:
             self.makeParam()
 
-        return self.ph.syncWriteTxOnly(self.start_address, self.data_length, self.param,
+        return self.ph.syncWriteTxOnly(self.port, self.start_address, self.data_length, self.param,
                                        len(self.data_dict.keys()) * (1 + self.data_length))

@@ -6,18 +6,16 @@
 
 
 This is source code from [official feetech repository](https://gitee.com/ftservo/SCServoSDK).
-The repository structure copies the structure of the [original library](https://gitee.com/ftservo/SCServoSDK/blob/master/SCServo_Python_220415.7z)
+The repository structure copies the structure of the [original library](https://gitee.com/ftservo/SCServoSDK/blob/e4d07f43c4c34827b2e226cf5cc706576504ebeb/SCServo_Python_200831.7z)
 
 ## Structure
 
 ```
 root dirrectory
-     |---scscl
      |---scservo_sdk 
-     |---scsservo_sdk_source
-     |---sms_sts
+     |---scsservo_sdk_example
 ```
-The `scscl` and `sms_sts` directories contain examples of using the library.
+The `scsservo_sdk_example` directories contain examples of using the library.
 
 The source code of the library is located in the `scservo_sdk` directory.
 
@@ -34,7 +32,7 @@ Python version `Python 3.9.2`.
 $ cd /usr/src/
 $ sudo git clone https://github.com/Adam-Software/Feetech-Servo-SDK.git
 $ sudo chown -R pi Feetech-Servo-SDK
-$ cd Feetech-Servo-SDK/scscl
+$ cd Feetech-Servo-SDK/scsservo_sdk_example
 $ python3 ping.py
 Succeeded to open the port
 Succeeded to change the baudrate
