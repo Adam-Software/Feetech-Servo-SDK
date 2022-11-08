@@ -5,7 +5,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setup(
     name='feetech-servo-sdk',
-    version='0.2.0',
+    version='1.0.0',
     packages=['scservo_sdk'],
     url='https://github.com/Adam-Software/FEETECH-Servo-Python-SDK',
     license='UNLICENSE',
@@ -14,6 +14,7 @@ setup(
     description='This is source code from official feetech repository',
     long_description_content_type="text/markdown",
     long_description=long_description,
+    install_requires=['pyserial'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: The Unlicense (Unlicense)',
